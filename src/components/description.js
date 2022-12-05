@@ -4,11 +4,15 @@ import Next from './button_next';
 
 function Description(){
 
-    return<section className='apropos'><h1>A Propos De Moi</h1>
-    <p>Lorem ipsum dolor sit amet. Vel temporibus tenetur ut rerum voluptate aut adipisci maxime. Vel maxime quia At totam officiis et dignissimos galisum 
-        cum odio expedita et consequatur quia? Et facere exercitationem aut quia omnis quo obcaecati velit ut autem galisum.
-Et delectus quis sit modi natus ut odio eligendi eos inventore alias et libero quas est quibusdam aliquam. Non expedita possimus ut 
-adipisci totam id minus voluptas et autem accusamus aut cupiditate veritatis. Ab explicabo laborum in odio perspiciatis non nihil quae rem dolorem magni.
- Ut dolorem exercitationem eos aliquid rerum in fugit suscipit id aperiam consequatur sed repellat consequatur. </p><Next target="gallery"></Next></section>
+    return<section className='apropos'><h1>A Propos</h1>
+    <p></p>
+    <article className='icon_details'>
+    <figure className='cards_descr'><img className='icone' src="./ic_devices_black_48dp.png" alt='device'></img><h3>devellopement mobile-first responsive</h3></figure>
+    <figure className='cards_descr'><img className='icone' src="./file-javascript.png" alt='javascript'></img><h3>Javascript</h3></figure>
+    <figure className='cards_descr'><img className='icone' src="./react_1.png" alt='react'></img><h3>React</h3></figure>
+    <figure className='cards_descr'><img className='icone' src="./file-html5.png" alt='html5'></img><h3>HTML5</h3></figure>
+    <figure className='cards_descr'><img className='icone' src="./file-css.png" alt='css'></img><h3>CSS3</h3></figure>
+    </article>
+    <Next target="gallery"></Next></section>
 
 }export default Description
