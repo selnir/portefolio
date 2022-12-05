@@ -1,0 +1,22 @@
+.apropos{
+
+    height: calc(100vh);
+    width: 100%;
+    margin: 0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding:50vh;
+    h1{
+        font-size: $TITLE1;
+
+
+    }
+    p{
+        font-size: $PARAG;
+
+    }
+
+}

@@ -1,0 +1,36 @@
+@font-face 
+{ 
+font-family: "dity";  
+src: url("../../../dity/dity.otf")format("opentype");
+}
+@font-face 
+{ 
+font-family: "ZenDots";  
+src: url("../../../Zen_Dots/ZenDots-Regular.ttf")format("truetype");
+}
+@font-face
+{
+font-family: "Lobster";
+src:url("../../../Lobster/Lobster-Regular.ttf")format("truetype")
+}
+@font-face
+{
+font-family: "Montserrat";
+src:url("../../../Montserrat_Subrayada/MontserratSubrayada-Regular.ttf")format("truetype")
+}
+
+
+
+
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family:"ZenDots";
+    font-size:$BODY;
+    background-color:$GRAY_BACK;
+
+}
+* {
+    box-sizing: border-box;
+}
