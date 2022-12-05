@@ -8,7 +8,11 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-
+        .icone_ext{
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+        }
         img{
 
             height: 150px;

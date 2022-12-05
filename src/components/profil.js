@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 
 function Profil(){
 
-    return  <section className='profil'><article><Navigation></Navigation><h1> Remi</h1><h2>Je suis developpeur d'application javascript React.</h2>
-    <p> si vous chercher un colaborateur dans le devellopement de votre visibilite sur le web <Link className='contactlink'  to="contact" spy={true} smooth={true}>n'hesitez pas a me contacter.</Link></p><Next target="apropos"></Next></article><Avatar></Avatar></section>
+    return  <section className='profil'><article><Navigation></Navigation><h1> Rémi</h1><h2>Je suis développeur d'application javascript React.</h2>
+    <p> si vous cherchez un collaborateur dans le développement de votre visibilité sur le web <Link className='contactlink'  to="contact" spy={true} smooth={true}>n'hésitez pas à me contacter.</Link></p><Next target="apropos"></Next></article><Avatar></Avatar></section>
 
 }export default Profil
