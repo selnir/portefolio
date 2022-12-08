@@ -1,7 +1,7 @@
 {
   "name": "portefolio",
   "version": "0.1.0",
-  "homepage": "https://selnir.github.io/portefolio/",
+  "homepage": "https://selnir.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
