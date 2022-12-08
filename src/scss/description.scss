@@ -33,7 +33,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 20%;
+            width: 5%;
 
             h3{
                 display: flex;
@@ -53,6 +53,9 @@
 @media screen and (max-width: 900px) {
     .apropos{
 
+        height: auto;
+        justify-content: space-around;
+    margin-bottom: 10%;
 
         p{
 
@@ -62,19 +65,23 @@
             height: auto;
 
         }
+
+        .icon_details{
+            justify-content:space-evenly;
+            margin-bottom: 10%;
     
         .cards_descr{
 
 
             h3{
 
-
+                display: none;
             }
         .icone{
         height: 50px;
         width: 50px;
 
-        }   }
+        }   }}
     
     
     
