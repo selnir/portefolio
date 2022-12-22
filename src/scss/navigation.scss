@@ -1,33 +1,79 @@
-.navigation{
+nav{
+
+  .show-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  input.checkbox-menu[type="checkbox"] {
+    display: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  input.checkbox-menu[type="checkbox"]:checked ~ div.menu-block {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-icon {
+    display: inline-block;
+    font-size: 4rem;
+    padding: 0.5em;
+    vertical-align: middle;
+  }
+  
+  .menu-block {
+    display: inline-block;
+    opacity: 0;
+    vertical-align: middle;
+    visibility: hidden;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    width: 100%;
+  }
+
+  .navUL{
+
+    width: 100%;
     display: flex;
     justify-content: space-around;
+
+
+  }
+  
+  ul.navUL {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+  }
+  
+  ul.navUL li {
+    display: inline-block;
     font-size: $PARAG;
-    list-style:none;
-    width: 100%;
-}
-
-.navigation:hover{
-
+    padding: 0px 5px;
+    text-align: center;
+width: 33%;
+  }
+  
+  ul.navUL li a {
+    color:$BLACK_FONT;
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+  }
+  
+  ul.navUL li a:hover {
+    color:$GRAY-TRANS-HOVER;
+    text-decoration: none;
     cursor: pointer;
-li:hover{
 
-text-decoration: underline;
+  }}
 
-}
-}
-
-@media screen and (max-width: 900px) {
-
-    .navigation{
-    flex-direction: column;
-    position: absolute;}
-
-}
-
-@media screen and (max-width: 600px) {
-
-    
-
-
-    
-    }

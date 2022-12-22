@@ -4,11 +4,13 @@
         to bottom right,
         $GREEN,
         $YELLOW);
-    height: calc(100vh);
+    height: 100vh;
     display: flex;
     justify-content:flex-start;
     align-items: center;
 
+
+    
     .wrapper_nav_text{
         margin: 0;
         display: flex;
@@ -16,6 +18,8 @@
         justify-content: space-around;
         color:$BLACK_FONT;
         height: 100%;
+        width: 100%;
+
 
     }
 
@@ -35,9 +39,6 @@
         margin: 20px;
         padding: 0;
         font-size: $PARAG;
-
-
-
     }
     .contactlink{
         color:$GRAY-TRANS-HOVER;
@@ -46,15 +47,67 @@
         cursor: pointer;
         opacity: 0.5;
     }
+    .highlight {
+		display: inline-block;
+		color: #343434;
+		transition: color 250ms, text-shadow 250ms;
+		text-decoration: none;
+		// text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+		
+		position: relative;
+		z-index: 0;
+
+		&::after {
+			position: absolute;
+			z-index: -1;
+			bottom: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+			content: '';
+			width: 100%;
+			height: 3px;
+			background-color: #343434;
+			transition: all 250ms;
+		}
+
+		&:hover {
+			color: white;
+			text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+            cursor: pointer;
+
+			&::after {
+				height: 105%;
+				width: 105%;
+			}
+			
+		}
+		
+	}
 .avatar{
     margin: 0;
+    animation-duration: 3s;
+    animation-name: apparition;
     max-width:100%;
-    height: 100%;
+    height:100%;
     background-color: transparent;
-    opacity: 0.3;    
     display: flex;
+    opacity: 0.3;    
     justify-content: center;
     align-items: center;
+    position: absolute;
+    right: 0%;
+
+
+    @keyframes apparition
+    {
+        from {
+        opacity: 0;
+        }
+
+        to {
+        opacity: 0.3;    
+        }
+      }
 
     img{
         margin: 0;
@@ -70,16 +123,16 @@
 
 
 .profil{
+justify-content: space-evenly;
 
     article{
         margin: 0;
+
 
     }
     .avatar{
 
         position: absolute;
-        background-color: transparent;
-        opacity: 0.3;
         height: auto;
         width: 100%;
         margin-left: auto;

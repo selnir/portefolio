@@ -29,7 +29,11 @@ body,html {
     font-family:"ZenDots";
     font-size:$BODY;
     background-color:$GRAY_BACK;
-
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 * {
     box-sizing: border-box;
