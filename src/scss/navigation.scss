@@ -60,7 +60,7 @@ nav{
     font-size: $PARAG;
     padding: 0px 5px;
     text-align: center;
-width: 33%;
+    width: 33%;
   }
   
   ul.navUL li a {
@@ -68,6 +68,7 @@ width: 33%;
     display: block;
     padding: 3px;
     text-decoration: none;
+    border-style: solid;
   }
   
   ul.navUL li a:hover {

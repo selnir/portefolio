@@ -33,7 +33,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 5%;
 
             h3{
                 display: flex;
@@ -50,12 +49,18 @@
     }
 
 }
+@media screen and (max-width: 1200px) {
+    .apropos{
+        p{
+            line-height: 1;
+        }
+    }}
 @media screen and (max-width: 900px) {
     .apropos{
 
         height: auto;
         justify-content: space-around;
-    margin-bottom: 10%;
+        margin-bottom: 10%;
 
         p{
 
